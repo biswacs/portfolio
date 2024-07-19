@@ -123,7 +123,7 @@ const App: React.FC = () => {
             <Section title="Projects">
               <div className="space-y-6 font-mono">
                 <div>
-                  <h3 className="font-semibold">Kribble 200+</h3>
+                  <h3 className="font-semibold">Kribble 200+ users</h3>
                   <p className="text-neutral-800">
                     A social platform for college students to share and stream
                     video and images. Built with React.js, Node.js, and
@@ -139,7 +139,7 @@ const App: React.FC = () => {
                   </a>
                 </div>
                 <div>
-                  <h3 className="font-semibold">StockIt 1200+</h3>
+                  <h3 className="font-semibold">StockIt 1200+ users</h3>
                   <p className="text-neutral-800">
                     An advanced stock analysis platform using Next.js and
                     Node.js.
