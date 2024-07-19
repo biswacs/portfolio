@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Linkedin, Mail, Github, ChevronRight } from "lucide-react";
+import { Linkedin, Mail, Github, ChevronRight, Twitter } from "lucide-react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 
@@ -130,8 +130,10 @@ const App: React.FC = () => {
                     PostgreSQL.
                   </p>
                   <a
-                    href="https://www.kribble.net"
-                    className="text-blue-600 hover:underline"
+                    onClick={() => {
+                      window.open("https://www.kribble.net");
+                    }}
+                    className="text-blue-600 hover:underline cursor-pointer"
                   >
                     View Project
                   </a>
@@ -143,8 +145,10 @@ const App: React.FC = () => {
                     Node.js.
                   </p>
                   <a
-                    href="https://stockit.algabay.com/"
-                    className="text-blue-600 hover:underline"
+                    onClick={() => {
+                      window.open("https://stockit.algabay.com/");
+                    }}
+                    className="text-blue-600 hover:underline cursor-pointer"
                   >
                     View Project
                   </a>
@@ -186,21 +190,33 @@ const App: React.FC = () => {
             <div className="flex justify-center space-x-6">
               <a
                 href="mailto:biswarupsen.work@gmail.com"
-                className="text-neutral-600 hover:text-neutral-800 transition-colors"
+                className="text-neutral-600 hover:text-neutral-800 transition-colors cursor-pointer"
               >
                 <Mail size={24} />
               </a>
               <a
-                href="https://github.com/bsen/"
-                className="text-neutral-600 hover:text-neutral-800 transition-colors"
+                onClick={() => {
+                  window.open("https://github.com/bsen/");
+                }}
+                className="text-neutral-600 hover:text-neutral-800 transition-colors cursor-pointer"
               >
                 <Github size={24} />
               </a>
               <a
-                href="https://www.linkedin.com/in/biswarup-sen/"
-                className="text-neutral-600 hover:text-neutral-800 transition-colors"
+                onClick={() => {
+                  window.open("https://www.linkedin.com/in/biswarup-sen/");
+                }}
+                className="text-neutral-600 hover:text-neutral-800 transition-colors cursor-pointer"
               >
                 <Linkedin size={24} />
+              </a>
+              <a
+                onClick={() => {
+                  window.open("https://x.com/biswasys");
+                }}
+                className="text-neutral-600 hover:text-neutral-800 transition-colors cursor-pointer"
+              >
+                <Twitter size={24} />
               </a>
             </div>
           </div>
