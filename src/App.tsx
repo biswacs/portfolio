@@ -127,7 +127,7 @@ const App: React.FC = () => {
                   <p className="text-neutral-800">
                     A social platform for college students to share and stream
                     video and images. Built with React.js, Node.js, and
-                    PostgreSQL.
+                    PostgreSQL, Ec2, S3, CloudFront.
                   </p>
                   <a
                     onClick={() => {
@@ -157,9 +157,9 @@ const App: React.FC = () => {
                 <div>
                   <h3 className="font-semibold">Centralized Exchange</h3>
                   <p className="text-neutral-800">
-                    Built a centralized cryptocurrency exchange platform
-                    focusing on high availability, low latency, and secure
-                    transactions using Node.js, PostgreSQL, and Redis.
+                    Built a centralized exchange platform focusing on high
+                    availability, low latency, and secure transactions using
+                    Node.js, PostgreSQL, and Redis.
                   </p>
                 </div>
               </div>
@@ -178,7 +178,6 @@ const App: React.FC = () => {
                 <SkillBadge skill="Git" />
                 <SkillBadge skill="CI/CD" />
                 <SkillBadge skill="Serverless Architecture" />
-                <SkillBadge skill="Authentication" />
                 <SkillBadge skill="Redis" />
                 <SkillBadge skill="System Design" />
                 <SkillBadge skill="WebRTC" />
