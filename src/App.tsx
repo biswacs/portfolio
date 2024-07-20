@@ -8,8 +8,6 @@ import {
   Twitter,
   Download,
 } from "lucide-react";
-import html2canvas from "html2canvas";
-import jsPDF from "jspdf";
 
 interface SectionProps {
   title: string;
@@ -70,35 +68,6 @@ const SkillBadge: React.FC<SkillBadgeProps> = ({ skill }) => (
 );
 
 const App: React.FC = () => {
-  const downloadPDF = async () => {
-    const content = document.getElementById("content");
-    if (!content) return;
-
-    const scale = 2;
-    const padding = 20;
-
-    const canvas = await html2canvas(content, {
-      scale: scale,
-      useCORS: true,
-      logging: false,
-    });
-
-    const imgWidth = 210;
-    const imgHeight = (canvas.height * imgWidth) / canvas.width;
-
-    const pdf = new jsPDF({
-      orientation: "portrait",
-      unit: "mm",
-      format: [imgWidth, imgHeight + (padding * 2) / scale],
-    });
-
-    const imgData = canvas.toDataURL("image/jpeg", 1.0);
-
-    pdf.addImage(imgData, "JPEG", 0, padding / scale, imgWidth, imgHeight);
-
-    pdf.save("biswarupsen-resume.pdf");
-  };
-
   return (
     <div className="h-screen overflow-y-auto no-scrollbar bg-white text-black font-mono">
       <div className="container mx-auto px-4 py-12">
@@ -235,7 +204,6 @@ const App: React.FC = () => {
             </div>
           </Section>
         </div>
-
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -279,21 +247,24 @@ const App: React.FC = () => {
             </motion.a>
           </div>
         </motion.div>
+        <div className="flex justify-center">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => {
+              window.open("/biswarupsen-resume.pdf");
+            }}
+            className="flex  px-6 py-3 bg-neutral-100 text-black rounded-full shadow-lg items-center justify-center"
+          >
+            <Download size={20} className="mr-2" />
+            Download Resume
+          </motion.button>
+        </div>
       </div>
 
       <footer className="py-8 text-center text-neutral-400">
         <p>© {new Date().getFullYear()} bsen.tech</p>
       </footer>
-
-      <motion.button
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        onClick={downloadPDF}
-        className="hidden fixed bottom-8 right-8 px-6 py-3 bg-neutral-200 text-black rounded-full shadow-lg items-center justify-center"
-      >
-        <Download size={20} className="mr-2" />
-        Download Resume
-      </motion.button>
     </div>
   );
 };
