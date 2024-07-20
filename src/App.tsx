@@ -259,7 +259,7 @@ const App: React.FC = () => {
             <motion.a
               whileHover={{ scale: 1.2, rotate: 5 }}
               href="mailto:biswarupsen.work@gmail.com"
-              className="text-neutral-600 hover:text-neutral-100 transition-colors"
+              className="text-neutral-600 hover:text-neutral-400 transition-colors"
             >
               <Mail size={28} />
             </motion.a>
@@ -268,7 +268,7 @@ const App: React.FC = () => {
               href="https://github.com/bsen/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-neutral-600 hover:text-neutral-100 transition-colors cursor-pointer"
+              className="text-neutral-600 hover:text-neutral-400 transition-colors cursor-pointer"
             >
               <Github size={28} />
             </motion.a>
@@ -277,7 +277,7 @@ const App: React.FC = () => {
               href="https://www.linkedin.com/in/biswarup-sen/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-neutral-600 hover:text-neutral-100 transition-colors cursor-pointer"
+              className="text-neutral-600 hover:text-neutral-400 transition-colors cursor-pointer"
             >
               <Linkedin size={28} />
             </motion.a>
@@ -286,7 +286,7 @@ const App: React.FC = () => {
               href="https://x.com/biswasys"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-neutral-600 hover:text-neutral-100 transition-colors cursor-pointer"
+              className="text-neutral-600 hover:text-neutral-400 transition-colors cursor-pointer"
             >
               <Twitter size={28} />
             </motion.a>
