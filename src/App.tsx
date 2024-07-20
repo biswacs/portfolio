@@ -146,19 +146,6 @@ const App: React.FC = () => {
             <div className="space-y-8">
               <motion.div whileHover={{ scale: 1.02 }}>
                 <h3 className="font-semibold text-xl text-neutral-600">
-                  Greenwave group of companies Limited
-                </h3>
-                <p className="text-sm text-neutral-600 mb-4">
-                  Backend Developer | Jan 2024 - May 2024
-                </p>
-                <p className="text-neutral-600">
-                  Implemented a serverless architecture to enhance scalability,
-                  reduce operational overhead, and improve the overall
-                  performance and reliability of their hiring platform.
-                </p>
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.02 }}>
-                <h3 className="font-semibold text-xl text-neutral-600">
                   Webkites Websolutions Private Limited
                 </h3>
                 <p className="text-sm text-neutral-600 mb-4">
