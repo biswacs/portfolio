@@ -140,10 +140,14 @@ const App: React.FC = () => {
                   </span>
                 </h3>
                 <p className="mb-4 text-neutral-600">
-                  Developed a social platform for college students to share and
-                  stream videos and images. Built with React.js, Node.js, and
-                  PostgreSQL, and utilizing AWS services such as EC2, S3, and
-                  CloudFront.
+                  A social platform for college students to share and stream
+                  video and images. The social platform has a monolithic backend
+                  that originally used Hono.js and Cloudflare but later switched
+                  to Express.js and AWS for better cost efficiency. Media files
+                  are stored in S3 for scalable storage, while CloudFront helps
+                  deliver these files quickly. Switching to Express.js and AWS
+                  improved performance and reduced costs by taking advantage of
+                  AWS's powerful infrastructure.
                 </p>
                 <a
                   onClick={() => window.open("https://www.kribble.net")}
@@ -174,12 +178,14 @@ const App: React.FC = () => {
               </motion.div>
               <motion.div whileHover={{ scale: 1.02 }}>
                 <h3 className="font-semibold text-xl text-neutral-600">
-                  Centralized Exchange
+                  Centralized Exchange Server
                 </h3>
                 <p className="mb-4 text-neutral-600">
-                  Built a centralized exchange platform focusing on high
-                  availability, low latency, and secure transactions using
-                  Node.js, PostgreSQL, and Redis.
+                  The centralized exchange platform is built using Node.js for
+                  efficient backend handling, PostgreSQL for reliable
+                  transaction management, and Redis for fast data retrieval.
+                  This setup ensures high availability, low latency, and secure
+                  transactions.
                 </p>
               </motion.div>
             </div>
