@@ -61,7 +61,7 @@ interface SkillBadgeProps {
 const SkillBadge: React.FC<SkillBadgeProps> = ({ skill }) => (
   <motion.span
     whileHover={{ scale: 1.1 }}
-    className="inline-block px-4 py-1.5 m-2 font-mono text-sm bg-neutral-200 text-neutral-800 rounded-full shadow-md"
+    className="inline-block px-4 py-1.5 m-2 font-mono text-sm bg-neutral-700 text-neutral-100 rounded-full shadow-md"
   >
     {skill}
   </motion.span>
@@ -115,16 +115,41 @@ const App: React.FC = () => {
             <div className="space-y-8">
               <motion.div whileHover={{ scale: 1.02 }}>
                 <h3 className="font-semibold text-xl text-neutral-600">
-                  Webkites Websolutions Private Limited
+                  Dukaan
                 </h3>
                 <p className="text-sm text-neutral-600 mb-4">
-                  Fullstack Developer | June 2024
+                  Software Developer | Current Role since July 2024
+                </p>
+                <p className="text-neutral-600">
+                  I manage backend system integrations, ensuring seamless
+                  functionality within our AI pipeline.
+                </p>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.02 }}>
+                <h3 className="font-semibold text-xl text-neutral-600">
+                  Webkites Websolutions
+                </h3>
+                <p className="text-sm text-neutral-600 mb-4">
+                  Fullstack Developer | June 2024 - July 2024
                 </p>
                 <p className="text-neutral-600">
                   Developed the frontend portal for Yogasana Bharat and the
                   World Yogasana Federation, handling backend logic for
                   admin-side user registration and data management, and utilized
                   AWS for cloud services.
+                </p>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.02 }}>
+                <h3 className="font-semibold text-xl text-neutral-600">
+                  Algabay AI
+                </h3>
+                <p className="text-sm text-neutral-600 mb-4">
+                  Founder & Tech Lead | April 2023 - April 2024
+                </p>
+                <p className="text-neutral-600">
+                  Algabay is a financial investment analysis platform that
+                  empowers people to understand and navigate market trends with
+                  confidence.
                 </p>
               </motion.div>
             </div>
@@ -158,30 +183,23 @@ const App: React.FC = () => {
               </motion.div>
               <motion.div whileHover={{ scale: 1.02 }}>
                 <h3 className="font-semibold text-xl text-neutral-600">
-                  StockIt{" "}
-                  <span className="text-neutral-600 font-light">
-                    1200+ users
-                  </span>
+                  Vipanie
                 </h3>
                 <p className="mb-4 text-neutral-600">
-                  Developed an advanced AI-based stock analysis platform
-                  utilizing Next.js, Node.js, OpenAI, and MongoDB. The platform
-                  provides detailed financial insights and analytics to help
-                  users make informed investment decisions.
+                  Vipanie is a platform that enables any business to
+                  effortlessly launch their online store. Built with React,
+                  Node.js, Postgres, and S3 with CloudFront, businesses can add
+                  their products, and Vipanie generates a webstore for them,
+                  allowing customers to place orders. It also includes a
+                  dashboard to manage orders efficiently.
                 </p>
-                <a
-                  onClick={() => window.open("https://stockit.algabay.com/")}
-                  className="text-blue-600 cursor-pointer"
-                >
-                  View Project →
-                </a>
               </motion.div>
               <motion.div whileHover={{ scale: 1.02 }}>
                 <h3 className="font-semibold text-xl text-neutral-600">
                   Centralized Exchange Server
                 </h3>
                 <p className="mb-4 text-neutral-600">
-                  The centralized exchange platform is built using Node.js for
+                  The centralized exchange server is built using Node.js for
                   efficient backend handling, PostgreSQL for reliable
                   transaction management, and Redis for fast data retrieval.
                   This setup ensures high availability, low latency, and secure
@@ -253,7 +271,7 @@ const App: React.FC = () => {
             </motion.a>
           </div>
         </motion.div>
-        <div className="flex justify-center">
+        <div className="hidden  justify-center">
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
