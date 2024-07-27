@@ -96,12 +96,6 @@ const App: React.FC = () => {
             <p className="text-2xl text-neutral-600">
               Backend | System Design | DevOps
             </p>
-            <div className="mt-8 flex justify-center">
-              <img
-                className="h-32 shadow-lg"
-                src="https://camo.githubusercontent.com/440a5e97734a233cc7093917cd3fd3699795c52134d5024cab8f5961f0b5bb35/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d6273656e26"
-              />
-            </div>
           </motion.div>
 
           <Section title="About Me">
