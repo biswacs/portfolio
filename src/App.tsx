@@ -112,25 +112,15 @@ const App: React.FC = () => {
                   Dukaan
                 </h3>
                 <p className="text-sm text-neutral-600 mb-4">
-                  Software Developer | Current Role since July 2024
-                </p>
-                <p className="text-neutral-600">
-                  I manage backend system integrations, ensuring seamless
-                  functionality within our AI pipeline.
+                  Backend Engineer | Current Role since July 2024
                 </p>
               </motion.div>
               <motion.div whileHover={{ scale: 1.02 }}>
                 <h3 className="font-semibold text-xl text-neutral-600">
-                  Webkites Websolutions
+                  Webkites
                 </h3>
                 <p className="text-sm text-neutral-600 mb-4">
                   Fullstack Developer | June 2024 - July 2024
-                </p>
-                <p className="text-neutral-600">
-                  Developed the frontend portal for Yogasana Bharat and the
-                  World Yogasana Federation, handling backend logic for
-                  admin-side user registration and data management, and utilized
-                  AWS for cloud services.
                 </p>
               </motion.div>
               <motion.div whileHover={{ scale: 1.02 }}>
@@ -139,11 +129,6 @@ const App: React.FC = () => {
                 </h3>
                 <p className="text-sm text-neutral-600 mb-4">
                   Founder & Tech Lead | April 2023 - April 2024
-                </p>
-                <p className="text-neutral-600">
-                  Algabay is a financial investment analysis platform that
-                  empowers people to understand and navigate market trends with
-                  confidence.
                 </p>
               </motion.div>
             </div>
